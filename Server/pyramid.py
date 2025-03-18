@@ -416,7 +416,10 @@ __________                              .__    .___
 		print(Fore.YELLOW + "[+] Using SSL key "+ Style.RESET_ALL, options.sslkey)
 		print(Fore.YELLOW + "[+] Using SSL cert" + Style.RESET_ALL, options.sslcert)
 		server = CustomHTTPServer(('', int(options.port)))
-		server.socket = ssl.wrap_socket(server.socket, keyfile=options.sslkey, certfile=options.sslcert, server_side=True)
+		context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+		context.load_cert_chain(certfile=options.sslcert, keyfile=options.sslkey)
+		#server.socket = ssl.wrap_socket(server.socket, keyfile=options.sslkey, certfile=options.sslcert, server_side=True)
+		server.socket = context.wrap_socket(server.socket, server_side=True)
 	else:
 		print(Fore.YELLOW + "[+] HTTP server starting "+ Style.RESET_ALL)
 		server = CustomHTTPServer(('', int(options.port)))
