@@ -1,6 +1,6 @@
 ![Supported Python versions](https://img.shields.io/badge/python-3.7+-blue.svg) [![Twitter](https://img.shields.io/twitter/follow/naksyn?label=naksyn&style=social)](https://twitter.com/intent/follow?screen_name=naksyn)
 
-# Pyramid
+# BetterPyramid
 <p align="center">
   <img width="250" alt="immagine" src="https://github.com/naksyn/Pyramid/assets/59816245/b4e1e468-d7e9-4580-b6bc-8b589fda3dd7"
 ">
