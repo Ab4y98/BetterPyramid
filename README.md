@@ -2,7 +2,7 @@
 
 # BetterPyramid
 <p align="center">
-  <img width="250" alt="immagine" src="https://github.com/naksyn/Pyramid/assets/59816245/b4e1e468-d7e9-4580-b6bc-8b589fda3dd7"
+  <img width="250" alt="immagine" src="https://i.ibb.co/7NjN0hLK/Chat-GPT-Image-Apr-1-2025-10-59-28-PM.png"
 ">
 </p>
 
